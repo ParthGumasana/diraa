@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diraa-jewellery.tart-krill-6009.chatgpt.site/sitemap.xml
