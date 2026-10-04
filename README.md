@@ -20,6 +20,10 @@ Then open `http://localhost:8080`.
 - Image assets are in `dist/assets/images/` and were extracted from the supplied brand catalog or supplied directly as the logo.
 - Canela and Helvetica Neue font files were not supplied. The site therefore uses an editorial system-serif fallback for Canela and the system Helvetica/Arial stack for Helvetica Neue; no trial fonts are shipped.
 
+## Product catalog
+
+The single category and product-data source is `dist/catalog.js`. Update categories there so the homepage links and `/collections` filters stay synchronized. Existing supplied imagery is mapped once per product record; unsupported categories intentionally render the coming-soon state.
+
 ## Missing launch details
 
 The supplied material did not include a verified Instagram URL, WhatsApp number, contact email, custom domain, or licensed font files. No placeholder social/contact links were published. Once verified, add those destinations to the contact section and footer, then add confirmed social profiles to the Organization JSON-LD `sameAs` list.

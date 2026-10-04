@@ -43,6 +43,7 @@
       }
     </script>
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/home-categories.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -56,12 +57,12 @@
 
         <nav class="desktop-nav" aria-label="Primary navigation">
           <a href="#about">About</a>
-          <a href="#collections">Collections</a>
+          <a href="/collections">Collections</a>
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
         </nav>
 
-        <a class="header-cta" href="#collections">Explore collections <span aria-hidden="true">↘</span></a>
+        <a class="header-cta" href="/collections">Explore collections <span aria-hidden="true">↘</span></a>
 
         <button
           class="menu-toggle"
@@ -77,10 +78,10 @@
 
       <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation" data-mobile-menu hidden>
         <a href="#about">About</a>
-        <a href="#collections">Collections</a>
+        <a href="/collections">Collections</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
-        <a class="button button--blue" href="#collections">Explore collections</a>
+        <a class="button button--blue" href="/collections">Explore collections</a>
       </nav>
     </header>
 
@@ -91,7 +92,7 @@
           <h1 id="hero-title">A little colour.<br /><em>A lot of you.</em></h1>
           <p class="hero-intro">Playful bead jewellery and accessories that bring personality to your everyday.</p>
           <div class="hero-actions">
-            <a class="button button--blue" href="#collections">Explore collections <span aria-hidden="true">↘</span></a>
+            <a class="button button--blue" href="/collections">Explore collections <span aria-hidden="true">↘</span></a>
             <a class="text-link" href="#about">Meet Diraa <span aria-hidden="true">→</span></a>
           </div>
         </div>
@@ -156,12 +157,14 @@
         <div class="section-heading reveal">
           <p class="section-kicker">02 / The collections</p>
           <h2 id="collections-title">Small details.<br /><em>Big energy.</em></h2>
-          <p>Three ways to bring more of yourself into the everyday, drawn from Diraa’s current visual edit.</p>
+          <p>Explore every Diraa category, with the current visual edit leading the way.</p>
         </div>
+
+        <nav class="home-category-links reveal" aria-label="Shop Diraa by category" data-home-categories></nav>
 
         <div class="collection-list">
           <article class="collection-item reveal">
-            <a href="#gallery-necklaces" aria-label="See bead necklaces in the gallery">
+            <a href="/collections?category=necklaces" aria-label="Explore Necklaces">
               <div class="collection-image">
                 <img
                   src="/assets/images/diraa-colour-necklaces.webp"
@@ -173,7 +176,7 @@
                 <span class="collection-number">01</span>
               </div>
               <div class="collection-text">
-                <h3>Bead necklaces</h3>
+                <h3>Necklaces</h3>
                 <p>Colour-led strands and characterful pendants made to sit at the centre of a look.</p>
                 <span class="text-link">View the edit <span aria-hidden="true">↗</span></span>
               </div>
@@ -181,14 +184,14 @@
           </article>
 
           <article class="collection-item collection-item--reverse reveal">
-            <a href="#gallery-bracelets" aria-label="See bracelets in the gallery">
+            <a href="/collections?category=bracelets" aria-label="Explore Bracelets">
               <div class="collection-image">
                 <img
-                  src="/assets/images/diraa-necklace-line.webp"
+                  src="/assets/images/diraa-bead-styling.webp"
                   width="900"
-                  height="900"
+                  height="1600"
                   loading="lazy"
-                  alt="Bead necklaces in different colours suspended against a bright blue sky"
+                  alt="Pastel bead bracelets styled with shell necklaces against a blue sky"
                 />
                 <span class="collection-number">02</span>
               </div>
@@ -201,7 +204,7 @@
           </article>
 
           <article class="collection-item reveal">
-            <a href="#gallery-charms" aria-label="See beaded charms in the gallery">
+            <a href="/collections?category=bag-charms" aria-label="Explore Bag Charms">
               <div class="collection-image">
                 <img
                   src="/assets/images/diraa-clutch-charm.webp"
@@ -213,7 +216,7 @@
                 <span class="collection-number">03</span>
               </div>
               <div class="collection-text">
-                <h3>Beaded charms</h3>
+                <h3>Bag Charms</h3>
                 <p>A bright finishing touch for the accessories already part of your everyday.</p>
                 <span class="text-link">View the edit <span aria-hidden="true">↗</span></span>
               </div>
@@ -282,7 +285,7 @@
               loading="lazy"
               alt="Pink beaded charm clipped to denim beside small everyday objects"
             />
-            <span>Charms / Everyday details</span>
+            <span>Phone Charms / Everyday details</span>
           </button>
 
           <button
@@ -366,7 +369,7 @@
       </div>
       <nav aria-label="Footer navigation">
         <a href="#about">About</a>
-        <a href="#collections">Collections</a>
+        <a href="/collections">Collections</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -384,6 +387,8 @@
       </div>
     </dialog>
 
+    <script src="/catalog.js" defer></script>
+    <script src="/home-categories.js" defer></script>
     <script src="/script.js" defer></script>
   </body>
 </html>
